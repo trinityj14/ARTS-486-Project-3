@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satori</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!------------- NAV BAR ------------->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand-container">
+          <img
+            src="images/SATORI-ICON.png"
+            alt="SATORI-ICON"
+            style="width: 50px; height: 50px"
+          />
+          <img
+            src="images/SATORI Logo.png"
+            alt="Satori Logo"
+            class="brand-logo"
+          />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="purpose.html">Our Purpose</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="" class="cta-btn">Reserve Your Lantern</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!------------- HERO ------------->
+    <section class="hero">
+      <video autoplay muted loop class="hero-video">
+        <source src="images/floating-lantern-hero.mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Illuminate Your Inner Light</h1>
+        <p>
+          Join a moment of reflection, connection, and renewal beneath the
+          rising lanterns.
+        </p>
+        <a href="" class="cta-btn" id="hero-btn">Reserve Your Lantern</a>
+      </div>
+    </section>
+
+    <!------------- ABOUT SATORI ------------->
+
+    <section class="about-satori">
+      <div class="about-content">
+        <h2>About SATORI</h2>
+        <p>
+          SATORI is a Japanese floating lantern festival centered around
+          self-discovery, reflection, and renewal. Established since 2015,
+          Satori has expanded across the United States to offer participants a
+          space to pause, breathe, and reconnect with themselves through a
+          symbolic act of release.
+        </p>
+        <a href="purpose.html" class="cta-btn" id="about-btn">Learn More</a>
+      </div>
+    </section>
+
+    <!------------- WHAT TO EXPECT ------------->
+
+    <section class="expect-section">
+      <h2>What to Expect</h2>
+
+      <div class="expect-row">
+        <img src="images/expect-1.png" class="expect-img" />
+        <div class="expect-content">
+          <h3>Reflective Atmosphere</h3>
+          <p>
+            Unlike traditional festivals filled with noise and lights, Satori
+            invites participants to slow down, reflect, and connect through
+            quiet release and shared presence under a sky of floating lanterns.
+          </p>
+        </div>
+      </div>
+
+      <div class="expect-row reverse">
+        <div class="expect-content">
+          <h3>Guided Intentions</h3>
+          <p>
+            Before the lanterns take flight, guests are guided through a brief
+            mindfulness exercise — writing thoughts, goals, or memories that
+            they wish to release or honor.
+          </p>
+        </div>
+        <img src="images/expect-2.jpg" class="expect-img" />
+      </div>
+
+      <div class="expect-row" id="community-section">
+        <img src="images/expect-3.png" class="expect-img" />
+        <div class="expect-content">
+          <h3>Community and Connection</h3>
+          <p>
+            Each event concludes in shared silence, as hundreds of lanterns
+            drift upward — a moment of unity and introspection, reminding
+            everyone of our shared hopes and humanity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------------- LOCATIONS ------------->
+
+    <section class="experience-satori">
+      <h2>Experience SATORI Near You</h2>
+
+      <div class="location-grid">
+        <!-- JAPAN -->
+        <a href="locations.html" class="location-card">
+          <div class="location-img">
+            <img src="images/japan.jpg" />
+            <div class="location-date">AUG 15</div>
+          </div>
+
+          <div class="location-content">
+            <h3>Kyoto, Japan</h3>
+            <p>
+              Join us beneath the cherry blossoms for an evening of reflection
+              and light. Experience the original Satori festival where the
+              tradition began.
+            </p>
+          </div>
+        </a>
+
+        <!-- NEW YORK -->
+        <a href="locations.html" class="location-card">
+          <div class="location-img">
+            <img src="images/newyork.jpg" />
+            <div class="location-date">AUG 22</div>
+          </div>
+
+          <div class="location-content">
+            <h3>New York City, NY</h3>
+            <p>
+              In the heart of Manhattan, find peace and connection among
+              thousands of glowing lanterns as they rise into the summer sky of
+              Central Park.
+            </p>
+          </div>
+        </a>
+
+        <!-- CALIFORNIA -->
+        <a href="locations.html" class="location-card">
+          <div class="location-img">
+            <img src="images/california.jpg" alt="San Francisco, California" />
+            <div class="location-date">SEP 05</div>
+          </div>
+
+          <div class="location-content">
+            <h3>San Francisco, California</h3>
+            <p>
+              Set against the serene Pacific horizon, SATORI California offers a
+              moment of release as the sun fades and lanterns fill the twilight.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!------------- TESTIMONIALS ------------->
+
+    <section class="slideshow-container">
+      <div class="mySlides">
+        <q>SATORI reminded me that letting go can also mean finding peace.</q>
+        <p class="participant">— Hana M.</p>
+      </div>
+
+      <div class="mySlides">
+        <q
+          >Watching the lanterns rise felt like watching my worries drift
+          away.</q
+        >
+        <p class="participant">— Michael L.</p>
+      </div>
+
+      <div class="mySlides">
+        <q>A rare moment of stillness in a world that never stops moving.</q>
+        <p class="participant">— Elise R.</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!------------- FOOTER ------------->
+
+    <footer class="footer">
+      <div class="footer-main-content">
+        <h2>Join Us at SATORI</h2>
+        <p>
+          Experience an evening of light, music, and reflection as we gather
+          beneath the open sky to celebrate connection and renewal.
+        </p>
+        <a href="" class="footer-cta-button" id="footer-section-btn"
+          >Reserve Your Lantern</a
+        >
+        <div class="footer-social-media-content">
+          <div class="footer-social-icon">
+            <img src="images/facebook_logo.png" alt="facebook_logo" />
+          </div>
+          <div class="footer-social-icon">
+            <img src="images/facebook_logo.png" alt="facebook_logo" />
+          </div>
+          <div class="footer-social-icon">
+            <img src="images/facebook_logo.png" alt="facebook_logo" />
+          </div>
+        </div>
+      </div>
+      <div class="gray-separator"></div>
+      <div class="footer-sub-content">
+        <div class="left">
+          <img
+            src="images/SATORI-ICON.png"
+            alt="SATORI-ICON"
+            class="satori-icon"
+          />
+          <img
+            src="images/SATORI Logo.png"
+            alt="satori logo"
+            class="footer-brand-logo"
+          />
+        </div>
+        <div class="center">
+          2025 Satori Sky Festival, LLC. All rights reserved.
+        </div>
+        <div class="right">
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
