@@ -1,6 +1,5 @@
 @import url(../style.css);
 
-
 /* ---------------------------- PURPOSE SECTION ---------------------------- */
 
 .about-satori {
@@ -45,7 +44,6 @@
 #about-btn:hover {
   background-color: #2e2e2e;
 }
-
 
 .embrace-satori {
   background-color: var(--primary-color);

@@ -1,6 +1,18 @@
 @import url(ourpurpose/purpose-style.css);
 @import url(locations/locations-style.css);
 
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 :root {
   --background-color: #fff8ef;
   --primary-color: #ffecd3;
@@ -132,7 +144,8 @@ body {
 }
 
 .hero-content h1 {
-  font-family: "Instrumental Serif";
+  font-family: "Instrument Serif", serif;
+  letter-spacing: 4px;
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -173,6 +186,7 @@ body {
 
 .about-content h2 {
   font-family: "Instrument Serif", serif;
+  letter-spacing: 2px;
   font-size: 2.5rem;
   color: var(--secondary-color);
 }
@@ -206,6 +220,7 @@ body {
 .expect-section h2 {
   text-align: center;
   font-family: "Instrument Serif", serif;
+  letter-spacing: 2px;
   font-size: 2.5rem;
   margin-bottom: 4rem;
 }
@@ -257,6 +272,7 @@ body {
 .experience-satori h2 {
   font-family: "Instrument Serif", serif;
   font-size: 2.5rem;
+  letter-spacing: 2px;
   margin-bottom: 3rem;
   color: var(--secondary-color);
 }
@@ -434,7 +450,7 @@ q {
   font-size: 4rem;
   font-weight: 400;
   color: var(--background-color);
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
 }
 
 .footer-main-content p {
