@@ -1,3 +1,5 @@
+@import url(../style.css);
+
 :root {
   --background-color: #fff8ef;
   --primary-color: #ffecd3;
@@ -142,7 +144,6 @@ body {
 #hero-btn {
   padding: 1rem 2rem;
 }
-
 
 /* ---------------------------- SATORI LOCATIONS SECTION ---------------------------- */
 
