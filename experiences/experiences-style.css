@@ -1,1 +1,125 @@
 @import url(../style.css);
+
+/* ---------------------------- Festival Highlights ---------------------------- */
+
+.festival-highlights {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 7rem 5rem;
+  overflow: hidden;
+}
+
+.festival-highlights h2 {
+  text-align: center;
+  font-family: "Instrument Serif", serif;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Hide scrollbar */
+.festival-highlights ::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+.festival-highlights ::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+/* Main container */
+.festival-highlights .external {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.festival-highlights .horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vw;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+
+/* Image wrapper */
+.festival-highlights .img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+
+.festival-highlights .img-wrapper:hover {
+  min-height: 65vh;
+}
+
+/* Speed & parallax variations */
+.festival-highlights .slower {
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateY(-10vh);
+}
+
+.festival-highlights .slower1 {
+  transform: rotate(90deg) translateZ(-0.25px) scale(1.05) translateY(8vh);
+}
+
+.festival-highlights .slower2 {
+  transform: rotate(90deg) translateZ(-0.3px) scale(1.3) translateY(2vh);
+}
+
+.festival-highlights .slower-down {
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateY(16vh);
+}
+
+.festival-highlights .faster {
+  transform: rotate(90deg) translateZ(0.15px) scale(0.8) translateY(14vh);
+}
+
+.festival-highlights .faster1 {
+  transform: rotate(90deg) translateZ(0.05px) scale(0.8) translateY(10vh);
+}
+
+.festival-highlights .fastest {
+  transform: rotate(90deg) translateZ(0.22px) scale(0.7) translateY(-15vh);
+}
+
+.festival-highlights .vertical {
+  transform: rotate(90deg) translateZ(-0.15px) scale(1.15);
+}
+
+.festival-highlights .last {
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateY(-8vh);
+}
+
+/* Image styling */
+.festival-highlights .img-wrapper a {
+  overflow: hidden;
+  display: block;
+  padding: 1vh;
+  background: #efecdb;
+  box-shadow: 0 10px 50px #5f2f1182;
+  border-radius: 0.5rem;
+}
+
+.festival-highlights img {
+  max-width: 45vh;
+  max-height: 50vh;
+  transition: 0.5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+  border-radius: 0.5rem;
+}
+
+.festival-highlights a:hover img {
+  filter: none;
+}

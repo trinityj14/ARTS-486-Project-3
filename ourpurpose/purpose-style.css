@@ -4,7 +4,6 @@
 
 .about-satori {
   width: 100%;
-  min-height: 350px;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
@@ -54,8 +53,9 @@
 .embrace-satori h2 {
   font-family: "Instrument Serif", serif;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: var(--secondary-color);
+  letter-spacing: 2px;
 }
 
 .purpose-grid {
@@ -118,10 +118,9 @@
 }
 
 .founders-section h2 {
-  text-align: center;
   font-family: "Instrument Serif", serif;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .founder-row {
