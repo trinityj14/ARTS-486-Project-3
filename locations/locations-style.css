@@ -3,7 +3,7 @@
 /* ---------------------------- SATORI LOCATIONS SECTION ---------------------------- */
 
 .locations-section {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 6rem 5rem;
 }
