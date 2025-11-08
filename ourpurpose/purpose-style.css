@@ -2,14 +2,11 @@
 
 /* ---------------------------- PURPOSE SECTION ---------------------------- */
 
-.about-satori {
-  width: 100%;
-  background-color: var(--primary-color);
+#ourpurpose-about {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  text-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .about-satori img {
@@ -20,7 +17,6 @@
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  align-items: left;
   gap: 1.5rem;
 }
 

@@ -1,6 +1,86 @@
 @import url(../style.css);
 
-/* ---------------------------- Festival Highlights ---------------------------- */
+/* ---------------------------- GUEST STORIES ---------------------------- */
+
+.guest-stories {
+  background-color: var(--primary-color);
+  padding: 6rem 5rem;
+  text-align: center;
+}
+
+.guest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Card */
+.guest-card {
+  position: relative;
+  background-color: var(--accent-color);
+  border-radius: 14px;
+  overflow: hidden;
+  color: black;
+  box-shadow: 2px 4px 12px #0000001a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 300px;
+}
+
+.guest-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  opacity: 0.7;
+  vertical-align: top;
+}
+
+.guest-card figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.guest-card blockquote {
+  margin: 0 0 1rem 0;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.guest-card h3 {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+}
+
+.guest-card h5 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.guest-card figcaption::before {
+  content: "“";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.15);
+  font-family: "Instrument Serif", serif;
+  pointer-events: none;
+}
+
+/* ---------------------------- FESTIVAL HIGHLIGHTS ---------------------------- */
 
 .festival-highlights {
   background-color: var(--secondary-color);
@@ -14,7 +94,7 @@
   font-family: "Instrument Serif", serif;
   letter-spacing: 2px;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 /* Hide scrollbar */
@@ -116,10 +196,34 @@
   max-height: 50vh;
   transition: 0.5s;
   vertical-align: top;
-  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
   border-radius: 0.5rem;
 }
 
 .festival-highlights a:hover img {
   filter: none;
+}
+
+/* ---------------------------- PHOTO GALLERY GRID ---------------------------- */
+
+.photo-gallery {
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
 }
