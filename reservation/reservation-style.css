@@ -3,3 +3,15 @@
 .experience-satori {
   padding: 6rem 5rem;
 }
+
+.image-container {
+  width: 1fr;
+  height: 680px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}

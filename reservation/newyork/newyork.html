@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New York</title>
+    <link rel="stylesheet" href="newyork-style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <!------------- NAV BAR ------------->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="../../index.html" class="nav-brand-container">
+          <img
+            src="../../images/SATORI-ICON.png"
+            alt="SATORI-ICON"
+            style="width: 50px; height: 50px"
+          />
+          <img
+            src="../../images/SATORI Logo.png"
+            alt="Satori Logo"
+            class="brand-logo"
+          />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="../../ourpurpose/purpose.html">Our Purpose</a></li>
+          <li><a href="../../experiences/experiences.html">Experiences</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="../../reservation/reservation.html" class="cta-btn"
+              >Reserve Your Lantern</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!------------- HERO ------------->
+    <section class="hero">
+      <img src="../../images/newyork.jpg" class="hero-img" />
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Brooklyn, NY</h1>
+        <p>
+          Join us beneath the cherry blossoms for an evening of reflection and
+          light. Experience the original Satori festival where the tradition
+          began.
+        </p>
+        <a href="#ticket" class="cta-btn" id="hero-btn">Get Tickets</a>
+      </div>
+    </section>
+
+    <!-- ====================== ABOUT SECTION ====================== -->
+    <section class="location-about">
+      <div class="location-info">
+        <h2>SATORI Brooklyn</h2>
+        <p>
+          SATORI Brooklyn embodies the Japanese tradition of mindfulness and shared connection.
+          Along the Brooklyn waterfront, overlooking the Manhattan skyline, the festival invites
+          guests to reflect, connect, and release their wishes through the gentle glow of lanterns
+          rising into the night sky.
+        </p>
+
+        <div class="location-details">
+          <p><strong>Date:</strong> Friday, August 22, 2025</p>
+          <p><strong>Time:</strong> 5:00 PM – 9:00 PM</p>
+          <p><strong>Venue:</strong> Brooklyn Bridge Park, NY</p>
+          <p><strong>Age:</strong> All ages welcome</p>
+          <small>Full event details will be emailed to you a week in advance.</small>
+        </div>
+      </div>
+
+      <div class="location-image">
+        <img src="../../images/newyorkmap.jpeg" />
+      </div>
+    </section>
+
+    <!-- ====================== PACKAGES SECTION ====================== -->
+    <section class="packages-section">
+      <h2>Festival Packages</h2>
+
+      <div class="package-grid">
+        <!-- GENERAL -->
+        <div class="package-card">
+          <div class="package-content">
+            <h3>General Admission</h3>
+            <p>
+              • Includes one lantern kit
+              <br>
+              • Full access to the evening event
+            </p>
+            <h3 class="price">$24.99</h3>
+          </div>
+        </div>
+
+        <!-- COUPLES -->
+        <div class="package-card">
+          <div class="package-content">
+            <h3>Couples Package</h3>
+            <p>
+              • Includes two lantern kits
+              <br>
+              • Full access to the evening event
+              <br>
+              • Reserved riverside seating for two</p>
+            <h3 class="price">$40.99</h3>
+          </div>
+        </div>
+
+        <!-- FAMILY -->
+        <div class="package-card">
+          <div class="package-content">
+            <h3>Family Package</h3>
+            <p>
+              • Includes four lantern kits
+              <br>
+              • Full access to the evening event
+              <br>
+              • Family seating area
+              <br>
+              • Access to children’s lantern workshop
+            </p>
+            <h3 class="price">$84.99</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== RESERVATION FORM ====================== -->
+    <section id="ticket" class="reservation-form">
+      <h2>Reserve Your Spot</h2>
+
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="package">Select Package</label>
+        <select id="package" name="package" required>
+          <option value="">-- Choose a package --</option>
+          <option value="general">General Admission</option>
+          <option value="couples">Couples Package</option>
+          <option value="family">Family Package</option>
+        </select>
+
+        <label for="tickets">Number of Tickets</label>
+        <input
+          type="number"
+          id="tickets"
+          name="tickets"
+          min="1"
+          value="1"
+          required
+        />
+
+        <button type="submit" id="reserve-btn">Confirm Reservation</button>
+      </form>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    <!------------- FOOTER ------------->
+
+    <footer class="footer" id="contact">
+      <div class="footer-main-content">
+        <h2>
+          Stay
+          <span
+            style="font-family: 'Instrument Serif', serif; font-style: italic"
+            >Connected</span
+          >
+          with SATORI
+        </h2>
+        <p>
+          Join our newsletter to receive updates, event invites, and moments of
+          reflection.
+        </p>
+
+        <form class="newsletter-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <a href="" class="cta-btn" id="newsletter-form-btn" type="submit"
+            >Connect</a
+          >
+        </form>
+
+        <div class="footer-social-media-content">
+          <div class="footer-social-icon">
+            <img src="../images/insta_logo.png" alt="instagram_logo" />
+          </div>
+          <div class="footer-social-icon">
+            <img src="../images/facebook_logo.png" alt="facebook_logo" />
+          </div>
+          <div class="footer-social-icon">
+            <img src="../images/youtube_logo.png" alt="youtube_logo" />
+          </div>
+        </div>
+      </div>
+      <div class="gray-separator"></div>
+      <div class="footer-sub-content">
+        <div class="left">
+          <img
+            src="../images/SATORI-ICON.png"
+            alt="SATORI-ICON"
+            class="satori-icon"
+          />
+          <img
+            src="../images/SATORI Logo.png"
+            alt="satori logo"
+            class="footer-brand-logo"
+          />
+        </div>
+        <div class="center">
+          2025 Satori Sky Festival, LLC. All rights reserved.
+        </div>
+        <div class="right">
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -2,6 +2,9 @@
 @import url(locations/locations-style.css);
 @import url(experiences/experiences-style.css);
 @import url(reservation/reservation-style.css);
+@import url(reservation/japan/japan-style.css);
+@import url(reservation/newyork/newyork-style.css);
+@import url(reservation/california/california-style.css);
 
 .instrument-serif-regular {
   font-family: "Instrument Serif", serif;
