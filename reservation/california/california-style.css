@@ -3,3 +3,7 @@
 .experience-satori {
   padding: 6rem 5rem;
 }
+
+body {
+  background-color: var(--primary-color);
+}
