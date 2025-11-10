@@ -14,26 +14,27 @@
     <!------------- NAV BAR ------------->
     <nav class="navbar">
       <div class="nav-container">
-        <a href="index.html" class="nav-brand-container">
+        <a href="../index.html" class="nav-brand-container">
           <img
-            src="images/SATORI-ICON.png"
+            src="../images/SATORI-ICON.png"
             alt="SATORI-ICON"
             style="width: 50px; height: 50px"
           />
           <img
-            src="images/SATORI Logo.png"
+            src="../images/SATORI Logo.png"
             alt="Satori Logo"
             class="brand-logo"
           />
         </a>
 
         <ul class="nav-links">
-          <li><a href="ourpurpose/purpose.html">Our Purpose</a></li>
-          <li><a href="experiences/experiences.html">Experiences</a></li>
-          <li><a href="locations/locations.html">Locations</a></li>
+          <li><a href="../ourpurpose/purpose.html">Our Purpose</a></li>
+          <li><a href="../experiences/experiences.html">Experiences</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="" class="cta-btn">Reserve Your Lantern</a>
+            <a href="../reservation/reservation.html" class="cta-btn"
+              >Reserve Your Lantern</a
+            >
           </li>
         </ul>
       </div>
@@ -42,47 +43,42 @@
     <!------------- HERO ------------->
     <section class="hero">
       <video autoplay muted loop class="hero-video">
-        <source src="images/floating-lantern-hero.mp4" />
+        <source src="../images/locations.mp4" />
       </video>
 
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <h1>SATORI Sky Lantern Festival</h1>
+        <h1>Reserve Your Lantern</h1>
         <p>
           Join a moment of reflection, connection, and renewal beneath the
           rising lanterns.
         </p>
-        <a href="" class="cta-btn" id="hero-btn">Reserve Your Lantern</a>
+        <a href="#location" class="cta-btn" id="hero-btn">View Locations</a>
       </div>
     </section>
 
     <!------------- ABOUT SATORI ------------->
 
-    <section class="about-satori">
+    <section class="about-satori" id="location">
       <div class="about-content">
-        <h2>About SATORI</h2>
+        <h2>Experience SATORI Near You</h2>
         <p>
-          SATORI is a Japanese floating lantern festival centered around
-          self-discovery, reflection, and renewal. Established since 2015,
-          Satori has expanded across the United States to offer participants a
-          space to pause, breathe, and reconnect with themselves through a
-          symbolic act of release.
+          Select your destination to reserve a lantern and join us for an
+          evening of light, reflection, and community. Each city offers its own
+          unique Satori experience — find the one that speaks to you.
         </p>
-        <a href="purpose.html" class="cta-btn" id="about-btn">Learn More</a>
       </div>
     </section>
 
     <!------------- LOCATIONS ------------->
 
-    <section class="experience-satori">
-      <h2>Experience SATORI Near You</h2>
-
+    <section class="experience-satori" >
       <div class="location-grid">
         <!-- JAPAN -->
-        <a href="locations/locations.html" class="location-card">
+        <a href="japan.html" class="location-card">
           <div class="location-img">
-            <img src="images/japan.jpg" />
+            <img src="../images/japan.jpg" />
             <div class="location-date">AUG 15</div>
           </div>
 
@@ -97,9 +93,9 @@
         </a>
 
         <!-- NEW YORK -->
-        <a href="locations/locations.html" class="location-card">
+        <a href="newyork.html" class="location-card">
           <div class="location-img">
-            <img src="images/newyork.jpg" />
+            <img src="../images/newyork.jpeg" />
             <div class="location-date">AUG 22</div>
           </div>
 
@@ -114,9 +110,12 @@
         </a>
 
         <!-- CALIFORNIA -->
-        <a href="locations/locations.html" class="location-card">
+        <a href="california.html" class="location-card">
           <div class="location-img">
-            <img src="../images/california.jpg" alt="San Francisco, California" />
+            <img
+              src="../images/california.jpg"
+              alt="San Francisco, California"
+            />
             <div class="location-date">SEP 05</div>
           </div>
 
@@ -130,5 +129,130 @@
         </a>
       </div>
     </section>
+
+    <!------------- TESTIMONIALS ------------->
+
+    <section class="slideshow-container">
+      <div class="mySlides">
+        <q>SATORI reminded me that letting go can also mean finding peace.</q>
+        <p class="participant">— Hana M.</p>
+      </div>
+
+      <div class="mySlides">
+        <q
+          >Watching the lanterns rise felt like watching my worries drift
+          away.</q
+        >
+        <p class="participant">— Michael L.</p>
+      </div>
+
+      <div class="mySlides">
+        <q>A rare moment of stillness in a world that never stops moving.</q>
+        <p class="participant">— Elise R.</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!------------- FOOTER ------------->
+
+    <footer class="footer" id="contact">
+      <div class="footer-main-content">
+        <h2>
+          Stay
+          <span
+            style="font-family: 'Instrument Serif', serif; font-style: italic"
+            >Connected</span
+          >
+          with SATORI
+        </h2>
+        <p>
+          Join our newsletter to receive updates, event invites, and moments of
+          reflection.
+        </p>
+
+        <form class="newsletter-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <a href="" class="cta-btn" id="newsletter-form-btn" type="submit"
+            >Connect</a
+          >
+        </form>
+
+        <div class="footer-social-media-content">
+          <div class="footer-social-icon">
+            <img src="../images/insta_logo.png" alt="instagram_logo" />
+          </div>
+          <div class="footer-social-icon">
+            <img src="../images/facebook_logo.png" alt="facebook_logo" />
+          </div>
+          <div class="footer-social-icon">
+            <img src="../images/youtube_logo.png" alt="youtube_logo" />
+          </div>
+        </div>
+      </div>
+      <div class="gray-separator"></div>
+      <div class="footer-sub-content">
+        <div class="left">
+          <img
+            src="images/SATORI-ICON.png"
+            alt="SATORI-ICON"
+            class="satori-icon"
+          />
+          <img
+            src="images/SATORI Logo.png"
+            alt="satori logo"
+            class="footer-brand-logo"
+          />
+        </div>
+        <div class="center">
+          2025 Satori Sky Festival, LLC. All rights reserved.
+        </div>
+        <div class="right">
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
