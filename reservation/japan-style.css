@@ -75,7 +75,7 @@
 }
 
 .package-card {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   border-radius: 14px;
   box-shadow: 2px 4px 12px #00000014;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
